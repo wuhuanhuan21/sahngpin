@@ -1,0 +1,252 @@
+.box {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+    #sp_newHeader_topLink {
+	    height: 28px;
+	    line-height: 28px;
+	    .frt {
+		    float: right;
+		    _display: inline;
+		}
+		ul li {
+		    float: left;
+		    height: 28px;
+		    line-height: 28px;
+		    _line-height: 30px;
+		    margin-left: 8px;
+		    color: #666;
+		}
+	}
+	#sp_newHeader * {
+	    font-family: 'PingHei','PingFang SC','Helvetica Neue','Helvetica',Arial,"宋体";
+	}
+	#sp_newHeader_loginForm li span {
+	    margin: 0 5px;
+	    color: #333;
+	}
+	#sp_newHeader_topLink ul{
+		#sp_newHeader_loginForm li a {
+		    margin-right: 4px;
+		}
+		li a {
+		    color: #686868;
+		    text-decoration: none;
+		    margin-right: 8px;
+		    padding: 3px 0;
+		    display: inline-block;
+		    height: 20px;
+		    line-height: 20px;
+		    _line-height: 21px;
+		    border: 1px solid #fff;
+		    border-bottom: 0;
+		    vertical-align: 0\9;
+		    _vertical-align: middle;
+		    overflow: hidden;
+		    vertical-align: bottom;
+		}
+	}
+	#spNewHeader_usercenter {
+	    padding-right: 15px!important;
+	    background-position: 61px -41px;
+	    width: 65px;
+	    text-align: center;
+	}
+	.spLogo {
+	    float: left;
+	    padding-top: 8px;
+	    a {
+	    display: block;
+		}
+	}
+	.alCart_Step {
+	    overflow: hidden;
+	    float: right;
+	    margin-top: 8px;
+	}
+	.alCart_Step li {
+	    width: 145px;
+	    float: left;
+	    height: 36px;
+	    background-color: #f1f1f1;
+	    color: #333;
+	    position: relative;
+	    .cur {
+		    background-color: #2d2d2d;
+		    color: #fff;
+		    p {
+			    font-weight: bold;
+			    color: #fff;
+			    background-color:#000;
+			}
+		}
+		p {
+		    width: 130px;
+		    margin: 0 auto;
+		    height: 36px;
+		    line-height: 36px;
+		    font-size: 12px;
+		    text-align: center;
+		    em {
+			    line-height: 36px;
+			    font-size: 14px;
+			    font-family: 'PingHei','PingFang SC','Helvetica Neue','Helvetica',Arial,Helvetica,sans-serif;
+			    text-align: center;
+			    margin: 0 8px 0 0;
+			    overflow: hidden;
+			}
+		}
+	}
+	.alCart_proList {
+	    background: 0;
+	    color: #333;
+	    position: relative;
+	    margin-bottom: 20px;
+	    .mainland_shopping{
+		    overflow: hidden;
+		    width: auto;
+		    .alCart_table_th{
+			    background: #f4f4f4;
+			    margin-bottom: 10px;
+			    .th_chk{
+				    width: 120px;
+				    border: 0;
+				    text-align: left;
+				    label{
+					    cursor: pointer;
+					    vertical-align: middle;
+					    float: left;
+					    padding-left: 25px;
+					    padding-right: 20px;
+					}
+				}
+				.th_item{
+					width: 290px;
+				}
+				.th {
+				    float: left;
+				    width: 160px;
+				    text-align: center;
+				    height: 24px;
+				    line-height: 24px;
+					input{
+					    vertical-align: middle;
+					    margin-right: 25px;
+					}
+				}
+			}
+		}
+	}
+	.cart_list_wp{
+	    border: 1px solid #e2e2e2;
+	    border-bottom: 0;
+	    border-top: 0;
+	    overflow: hidden;
+	    .cart_content_table {
+		    border: 1px solid #e2e2e2;
+		    border-top: 0;
+		    border-left: 0;
+		    border-right: 0;
+		    border-bottom: 0;
+		    .cart_content_table .tr {
+			    border-top: 1px solid #e2e2e2;
+			    position: relative;
+			   
+				}
+			}
+		}
+}
+.car_content{
+	width: 960px;
+	margin:0 auto;
+	img{
+		width: 960px;
+		height: 160px;
+	}
+}
+.new_commodity_money {
+    width: 960px;
+    float: right;
+    color: #000;
+    padding-right: 10px;
+    line-height: 24px;
+    height: 24px;
+    font-size: 18px;
+    text-align: right;
+    margin-top: 10px;
+    em,i{
+        font-size: 16px;
+    	color: #0700c5;
+    	margin-right: 5px;
+    	font-style: normal;
+        font-family: 'PingHei','PingFang SC','Helvetica Neue','Helvetica',"微软雅黑","Microsoft YaHei","黑体","Tahoma","宋体";
+    }
+}
+.cart_bottom_right .settlement_box {
+    display: inline-block;
+    width: 420px;
+    float: right;
+    margin-top: 20px;
+    a{
+	    background: #f0f0f0;
+	    width: 180px;
+	    height: 32px;
+	    display: inline-block;
+	    line-height: 32px;
+	    font-size: 16px;
+	    text-align: center;
+    }
+    #settlement_btn{
+    	float: right;
+    }
+}
+.mgt10 {
+    margin-top: 10px;
+}
+.box {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+}
+#spFooter_info {
+    background: #333;
+    height: 44px;
+    line-height: 36px;
+    color: #666;
+    text-align: center;
+    overflow: hidden;
+}
+#spFooter_info a {
+    float: left;
+    display: inline;
+    vertical-align: middle;
+    width: 105px;
+    text-align: center;
+    border-right: 1px solid #474747;
+    color: #fff;
+    padding: 4px 0;
+    overflow: hidden;
+}
+#spFooter_record {
+    padding: 12px 0;
+    text-align: center;
+    line-height: 30px;
+    a{
+    	padding: 0 8px 0 0;
+    	font-size: 12px;
+    	color: #000;
+    }
+}
+#spFooter_auth {
+    padding: 0 0 20px;
+    text-align: center;
+    a {
+	    padding: 0 4px;
+	    font-size: 0;
+	    display: inline-block;
+	    width: 76px;
+	    height: 22px;
+	}
+}

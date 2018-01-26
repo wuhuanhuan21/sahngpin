@@ -1,0 +1,15 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, address, caption, cite, code, dfn, em, strong, th, var{
+	margin: 0;
+	padding: 0;
+} 
+img{
+	border: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style:none;
+}dd {
+    display: block;
+}

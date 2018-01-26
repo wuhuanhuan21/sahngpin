@@ -1,0 +1,21 @@
+{
+  "name": "gulp-t",
+  "version": "1.0.0",
+  "description": "this is a learn gulp directory",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-sass-china": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xuejiazhi",
+  "license": "ISC"
+}

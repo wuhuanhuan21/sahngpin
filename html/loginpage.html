@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录注册</title>
+	<link rel="stylesheet" type="text/css" href="../style/loginpage.css">
+	<link rel="stylesheet" type="text/css" href="../style/reset.css">
+    <link rel="stylesheet" type="text/css" href="../style/index.css">
+</head>
+<body>
+	<div id="spLogo" class="box relt">
+        <a href="index.html" id="spLogo_logo">
+        	<img src="https://loginjs.shangpin.com/shangpin/images/logo/logo_v101.png" alt="尚品网-奢侈品" style="margin: 0 auto; width: 212px">
+        </a>
+    </div>
+    <p style="font-size: 13px; line-height: 24px; background: #000; color: #fff; text-align: center;">依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 将更有利于保护您的个人隐私。</p>
+    <div class="box" id="spComm_regloginbox">
+    <div class="clr spComm_regloghook">
+        <!--Login Start-->
+        <div class="sp_regLoginBox" id="sp_loginJs">
+            <div class="regLogin_box flt">
+                <div id="sp_loginBox" class="clr">
+                    <div id="spSign_box" class="clr">
+                        <div class="splogin_block splogin_form flt">
+                            <ul class="tab_change">
+                                <li class="current">
+                                	<a class="login_title" href="javascript:;">扫码登录</a>
+                                </li>
+                                <li class="">
+                                	<a class="login_title" href="javascript:;">账户登录</a>
+                                </li>
+                            </ul>
+                            <!--扫码登陆-->
+                            <dl class="margint40 code-login">
+                                <!--扫码登陆-->
+                                <dd class="scan-code" style="display: none;">
+                                    <div class="login_erweima" style="left: 100px;">
+                                    	<img id="spSignin_captchQRCode" src="https://login.shangpin.com/login/QRCodeLoginHandler?v=0.3193979598650478">
+                                    </div>
+                                    <div class="login_phone" style="display: none;">
+                                    	<img src="https://loginjs.shangpin.com/shangpin/images/page/login/code-phone.png">
+                                    </div>
+                                </dd>
+                            <!--账户登陆-->
+                            <div class="count-login " style="display:block;">
+                                <ul class="login-type clr">
+                                    <li class="active-login">
+                                    	<span></span>账号密码登录</li>
+                                    <li><span></span>动态密码登录</li>
+                                </ul>
+                                <dl class="margint40 normal-login">
+									<form action="/login" id="formlogin" method="post" target="hiddenIFrame">
+										<input id="ReturnUrl" name="ReturnUrl" type="hidden" value="">
+										<input id="VIId" name="VIId" type="hidden" value="10ba3658-9be2-4028-9b8c-cc36e417582a">                              
+										<dd>
+                                            <!--账号-->
+                                            <div class="inputparent_rlat" style="position: relative;">
+                                                <input type="text" class="txt_input" style="border: 1px solid rgb(177, 173, 170);" placeholder="请输入手机号/邮箱">
+                                                <span></span>
+                                            </div>
+                                        </dd>
+                                        <dd>
+                                            <!--密码-->
+                                            <div class="inputparent_rlat" style="position: relative;">
+                                                <input type="password" class="txt_input" id="spSignin_password" name="Password" style="border: 1px solid rgb(177, 173, 170);" placeholder="请输入密码">
+                                                <span></span>
+                                            </div>
+                                        </dd>
+                                        <dd class="verify_code">
+                                            <!--验证码-->
+                                            <div class="inputparent_rlat" style="position: relative;">
+                                                <input type="text" class="txt_input code_input" id="spSignin_code" maxlength="4" name="VerifyCode" style="border: 1px solid rgb(177, 173, 170);" placeholder="请输入图形验证码"> 
+                                                <i class="code_box">
+                                                	<img id="spSignin_captchCode" onclick="changeCaptchCode();" src="/login/VerifyImage?viid=10ba3658-9be2-4028-9b8c-cc36e417582a&amp;v=0.2536856435869137">
+                                                	<a href="javascript:;" onclick="changeCaptchCode()">换一换</a>
+                                                </i> 
+                                                <span></span>
+                                            </div>
+                                        </dd>
+                                        <dd class="login-button">
+                                            <input type="checkbox" id="auto_login" name="RememberMe" checked="checked" value="true">&nbsp;
+                                            <label for="auto_login">记住我</label>
+                                            <a href="FindPwd/Index" class="reset_pwd">忘记密码？</a>
+                                            <a href="#" class="submit_btn" id="spSignin_btn">登 录</a>
+                                        </dd>
+                                    </form>
+                                </dl>
+                                <dl class="margint40 dynamic-login">
+                                	<form action="/login/dynamiclogin" id="dynamiclogin" method="post" target="hiddenIFrame">
+                                		<input id="ReturnUrl" name="ReturnUrl" type="hidden" value="http://www.shangpin.com/?Source=baidupinzhuan&amp;Campaign=top&amp;Param=title">
+                                		<input id="VIId2" name="VIId2" type="hidden" value="9d5428d3-b689-462e-a7ae-4f82f17d83d3">
+                                		<dd>
+                                            <!--账号-->
+                                            <div class="inputparent_rlat" style="position: relative;">
+                                                <label for="AccountName" style="position: absolute; top: 0px; left: 20px; cursor: text; color: rgb(153, 153, 153); line-height: 45px;">请输入手机号</label>
+                                                <input type="text" class="txt_input" placeholder="请输入手机号" id="spDynamic_username" name="AccountName" value="" style="border: 1px solid rgb(177, 173, 170);">
+                                                <span></span>
+                                            </div>
+                                        </dd>
+                                        <dd>
+                                            <!--验证码-->
+                                            <div class="inputparent_rlat" style="position: relative;">
+                                                <label for="VerifyCode" style="position: absolute; top: 0px; left: 20px; cursor: text; color: rgb(153, 153, 153); line-height: 45px;">请输入图形验证码</label>
+                                                <input type="text" class="txt_input code_input" phdata="请输入图形验证码" id="spDynamic_code" name="VerifyCode" value="" maxlength="4" style="border: 1px solid rgb(177, 173, 170);"> 
+                                                <i class="code_box">
+                                                	<img alt="验证码" id="spSignin_dynamicCaptchCode" onclick="changeDynamicCaptchCode();" src="/login/VerifyImage?viid=9d5428d3-b689-462e-a7ae-4f82f17d83d3&amp;v=0.6111948421941034">
+                                                	<a href="javascript:;" onclick="changeDynamicCaptchCode()">换一换</a>
+                                                </i> 
+                                                <span></span>
+                                            </div>
+                                        </dd>
+                                        <dd class="Verification_Code">
+                                            <!--密码-->
+                                            <div class="inputparent_rlat" style="position: relative;">
+                                                <label for="SMSVerifyCode" style="position: absolute; top: 0px; left: 20px; cursor: text; color: rgb(153, 153, 153); line-height: 45px;">请输入验证码</label>
+                                                <input type="text" class="txt_input veri_input" phdata="请输入验证码" id="spDynamic_vericode" maxlength="6" name="SMSVerifyCode" style="border: 1px solid rgb(177, 173, 170);">
+                                                <span></span>
+                                                <a href="javascript:;" id="loginPasswordGetCode" data-waiting="秒后再次获取">获取验证码</a>
+                                                <input type="hidden" name="UserIdentityCode" id="UserIdentityCode" value=" ">
+                                            </div>
+                                        </dd>
+                                        <dd class="login-button">
+                                            <input type="checkbox" id="auto_login" checked="checked" name="RememberMe" value="true">&nbsp;
+                                            <label for="auto_login">记住我</label>
+                                            <a href="FindPwd/Index" class="reset_pwd">忘记密码？</a>
+                                            <a href="#" class="submit_btn" id="spDynamic_btn">登 录</a>
+                                        </dd>
+                                    </form>
+                                </dl>
+                            </div>
+                            <div class="username_select">
+                            	<ul style="display: none;">
+                            		
+                            	</ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="regLogin_rightbox frt">
+                <div id="spReg_msg">
+                    <p class="spReg_newbox">
+                        没有尚品网账号？
+                        <a href="#js" id="spReg_new" class="comm_regBtn">
+                        	注册新会员
+                        	<img src="https://loginjs.shangpin.com/shangpin/images/page/login/go_login.png">
+                        </a>
+                    </p>
+                </div>
+                <div class="regLogin_rightinner">
+                    <div class="other_loginbox">
+                        <p class="special">使用以下方式进行登录</p>
+                        <p class="other_logininner">
+                            <a href="#js" id="slSign_weibosina" class="inlb"></a>
+                            <a href="/login/QqLogin" id="slSign_qq" class="inlb"></a>
+                            <a href="/login/AlipayLogin" id="slSign_alipay" class="inlb"></a>
+                        </p>
+                    </div>
+                </div>
+                <div style="text-align:center;">
+                    <a href="#">
+                    	<img src="https://loginjs.shangpin.com/shangpin/images/page/login/download.png">
+                    </a>
+                    <p style="padding:5px 0px; font-size:14px;">【扫码下载尚品APP】</p>
+                </div>
+            </div>
+        </div>
+        <!--Login End-->
+    </div>
+</div>
+<div id="spFooter" class="box mgt10 relt">
+        <p id="spFooter_info">
+            <a href="#js">关于尚品</a>
+            <a href="#js">尚品新闻</a>
+            <a href="#js">招聘信息</a>
+            <a href="#js">品牌招商</a>
+            <a href="#js">帮助中心</a>
+            <a href="#js">联系我们</a>
+            <a href="#js">友情链接</a>
+            <a href="#js">网站地图</a>
+            <a href="#js" style="border-right:none">搜索直通车</a>
+        </p>﻿
+        <p id="spFooter_record">
+            <a href="#js">京公网安备110105001984</a>
+            <a href="#js">京ICP备09087291号-2</a>
+            <a href="#js">京ICP证090703号</a><i>
+                Copyright © 2010-2016
+                Shangpin.com All Rights Reserved
+            </i>
+        </p>
+        <p id="spFooter_auth">
+            <a href="#js">
+            	<img src="https://loginjs.shangpin.com/shangpin/images/foot5.gif?v=809" alt="中国电子商务诚信单位" style="opacity: 1;">
+            </a>
+            <a href="#js">
+            	<img src="https://loginjs.shangpin.com/shangpin/images/foot6.gif?v=809" alt="支付宝特约商家" style="opacity: 1;"></a>
+            <a href="#js" style="width: 62px">
+            	<img src="https://loginjs.shangpin.com/shangpin/images/public/cx.png" alt="诚信示范企业" style="opacity: 1;"></a>
+            <a href="#js">
+            	<img src="https://loginjs.shangpin.com/shangpin/images/foot8.gif?v=809" alt="网上交易保障中心" style="opacity: 1;"></a>
+            <a href="#js">
+            	<img src="https://loginjs.shangpin.com/shangpin/images/foot10.gif" alt="中国互联网信用评价中心" style="opacity: 1;">
+            </a>
+            <a href="#js">
+            	<img src="https://loginjs.shangpin.com/shangpin/images/foot11.gif" alt="中国电子商务诚信单位" style="opacity: 1;">
+            </a>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,445 @@
+@charset "UTF-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, address, caption, cite, code, dfn, em, strong, th, var {
+  font: 400 12px 'Futura','PingHei','PingFang SC','Helvetica Neue','Helvetica',Arial,"Tahoma",Microsoft YaHei; }
+
+body, body #spLogo {
+  background: #f6f6f6; }
+
+#spLogo {
+  padding: 20px 0;
+  text-align: center;
+  height: 40px; }
+
+.box {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #fff; }
+
+.relt {
+  position: relative; }
+
+a:link, a:visited {
+  color: #333;
+  text-decoration: none; }
+
+#spComm_regloginbox {
+  overflow: hidden; }
+
+.spComm_regloghook {
+  width: 2000px; }
+
+.sp_regLoginBox {
+  height: 680px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 36px;
+  float: left;
+  width: 958px;
+  position: relative; }
+  .sp_regLoginBox dd .inputparent_rlat {
+    width: 410px;
+    height: 58px;
+    float: left;
+    position: relative; }
+    .sp_regLoginBox dd .inputparent_rlat i {
+      float: right;
+      height: 45px;
+      display: table-cell; }
+      .sp_regLoginBox dd .inputparent_rlat i img {
+        vertical-align: middle;
+        margin-right: 20px; }
+    .sp_regLoginBox dd .inputparent_rlat span {
+      overflow: initial;
+      width: 388px;
+      height: 20px; }
+  .sp_regLoginBox .splogin_block {
+    background: 0;
+    border: 0 none;
+    width: 496px;
+    text-align: left;
+    padding: 0 0 0 94px;
+    margin-top: 35px;
+    float: left;
+    position: absolute; }
+    .sp_regLoginBox .splogin_block ul.tab_change {
+      width: 410px;
+      height: 28px;
+      line-height: 27px;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 10px; }
+    .sp_regLoginBox .splogin_block ul.tab_change li.current {
+      color: #000; }
+    .sp_regLoginBox .splogin_block ul.tab_change li {
+      width: 204px;
+      height: 27px;
+      color: #3b3b3b;
+      float: left;
+      line-height: 28px;
+      text-align: center;
+      font-family: 'PingHei','PingFang SC','Helvetica Neue','Helvetica',"微软雅黑","Microsoft YaHei","黑体","Tahoma","宋体";
+      font-size: 13px;
+      color: #888; }
+    .sp_regLoginBox .splogin_block ul.tab_change li a.login_title {
+      display: inline-block;
+      width: 92px;
+      height: 28px;
+      font-size: 20px; }
+    .sp_regLoginBox .splogin_block ul.tab_change li.current a {
+      color: #000; }
+    .sp_regLoginBox .splogin_block dl {
+      width: 207px;
+      margin: 20px auto 0;
+      width: 100%;
+      width: auto; }
+      .sp_regLoginBox .splogin_block dl .margint40 {
+        height: 440px; }
+    .sp_regLoginBox .splogin_block dl.margint40.code-login dd {
+      height: 270px;
+      padding-top: 45px;
+      position: relative;
+      overflow: visible; }
+    .sp_regLoginBox .splogin_block dl dd {
+      overflow: hidden;
+      color: #3b3b3b; }
+    .sp_regLoginBox .splogin_block dd {
+      height: 75px;
+      color: #7a7a7a;
+      vertical-align: middle; }
+    .sp_regLoginBox .splogin_block dl .margint40.code-login dd .login_erweima {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #e5e5e5;
+      position: absolute;
+      top: 50%;
+      margin-top: -100px;
+      left: 100px;
+      text-align: center; }
+    .sp_regLoginBox .splogin_block dl .margint40.code-login dd .login_erweima img {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); }
+    .sp_regLoginBox .splogin_block dl .margint40.code-login dd .login_phone {
+      position: absolute;
+      top: 50%;
+      margin-top: -135px;
+      right: 40px;
+      display: none; }
+
+.regLogin_box {
+  width: 590px; }
+
+.flt {
+  float: left;
+  _display: inline; }
+
+#spSign_box {
+  width: 590px;
+  height: 540px;
+  position: relative;
+  overflow: hidden; }
+
+#splogin_block dd {
+  width: 100%; }
+
+.count-login ul.login-type {
+  width: 400px;
+  margin: 27px 0; }
+
+.count-login ul li.active-login {
+  color: #000; }
+
+.count-login ul li {
+  width: 50%;
+  float: left;
+  font-size: 16px;
+  position: relative;
+  color: #555; }
+
+.count-login ul li.active-login span {
+  background: #000;
+  border: 1px solid #000; }
+
+.count-login ul li span {
+  width: 15px;
+  height: 15px;
+  margin: 3px 10px 0 40px;
+  float: left;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+  display: block; }
+
+.splogin_block dl {
+  width: auto;
+  width: 207px;
+  margin: 20px auto 0; }
+
+.splogin_block dl.margint40 {
+  height: 440px; }
+
+input {
+  outline: 0; }
+
+.splogin_block dl dd {
+  overflow: hidden;
+  color: #3b3b3b; }
+
+.splogin_block dd {
+  height: 75px;
+  color: #7a7a7a;
+  vertical-align: middle; }
+
+.splogin_block dd label {
+  font-size: 14px; }
+
+.splogin_block dd input.txt_input {
+  width: 388px;
+  float: left;
+  display: inline;
+  margin: 0 22px 0 0; }
+
+.splogin_block dd input.txt_input {
+  height: 27px;
+  line-height: 27px;
+  width: 185px;
+  padding: 8px 10px;
+  border: 1px solid #b1adaa;
+  color: #999;
+  font-family: 'PingHei','PingFang SC','Helvetica Neue','Helvetica',"宋体";
+  font-size: 16px; }
+
+.splogin_block dd span {
+  overflow: hidden;
+  display: none;
+  color: #0700c5;
+  text-align: left;
+  line-height: 23px;
+  padding: 0 0 0 20px;
+  float: left;
+  margin: 5px;
+  background: url(https://loginjs.shangpin.com/shangpin/images/public/sp.gif?v=20180118033533) no-repeat 2px -1046px; }
+
+.splogin_block dd {
+  height: 75px;
+  color: #7a7a7a;
+  vertical-align: middle; }
+
+.verify_code {
+  display: none; }
+
+.splogin_block dd label {
+  font-size: 14px; }
+
+.splogin_block dd input.code_input {
+  width: 236px; }
+
+.splogin_block dd input.txt_input {
+  width: 388px;
+  float: left;
+  display: inline;
+  margin: 0 22px 0 0; }
+
+.splogin_block dd input.txt_input {
+  height: 27px;
+  line-height: 27px;
+  width: 185px;
+  padding: 8px 10px;
+  border: 1px solid #b1adaa;
+  color: #999;
+  font-family: 'PingHei','PingFang SC','Helvetica Neue','Helvetica',"宋体";
+  font-size: 16px; }
+
+.code_box a {
+  display: inline-block;
+  line-height: 45px; }
+
+a:link, a:visited {
+  color: #333;
+  text-decoration: none; }
+
+.splogin_block dd span {
+  display: none;
+  overflow: hidden;
+  color: #0700c5;
+  text-align: left;
+  line-height: 23px;
+  padding: 0 0 0 20px;
+  float: left;
+  margin: 5px;
+  background: url(https://loginjs.shangpin.com/shangpin/images/public/sp.gif?v=20180118033533) no-repeat 2px -1046px; }
+
+dd {
+  display: block; }
+
+.splogin_block dd a.submit_btn {
+  text-align: center;
+  display: block;
+  width: 410px;
+  height: 49px;
+  line-height: 49px;
+  background: #e5e5e5;
+  font-size: 14px;
+  color: #fff;
+  float: left;
+  font-size: 18px; }
+
+.username_select {
+  position: absolute;
+  width: 410px;
+  left: 94px;
+  top: 154px; }
+
+.username_select ul {
+  border: 1px solid #333;
+  background-color: white;
+  margin-top: 4px;
+  display: none; }
+
+.regLogin_rightbox {
+  width: 367px;
+  height: 440px;
+  margin-top: 100px;
+  border-left: 1px solid #e7e7e7; }
+
+.frt {
+  float: right;
+  _display: inline; }
+
+#spReg_msg {
+  padding-bottom: 22px; }
+
+#spReg_msg .spReg_newbox {
+  font-size: 16px;
+  padding-left: 61px; }
+
+#spReg_new {
+  position: relative;
+  width: 115px;
+  text-align: left;
+  font-size: 18px;
+  display: block;
+  padding-left: 55px;
+  margin: 18px 0 0; }
+
+.spReg_newbox a {
+  color: #0700c5; }
+
+a:link, a:visited {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer; }
+
+.comm_regBtn {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 18px;
+  text-align: center;
+  width: 224px;
+  display: inline-block; }
+
+.regLogin_rightinner {
+  width: 300px;
+  margin: 0 auto; }
+
+.other_loginbox {
+  margin-bottom: 34px; }
+
+.regLogin_rightinner p.special {
+  border-top: 1px dashed #000;
+  padding-top: 30px; }
+
+.regLogin_rightinner p {
+  font-size: 14px;
+  text-align: center; }
+
+.regLogin_rightinner p.other_logininner {
+  padding-left: 0;
+  padding-top: 30px;
+  text-align: center; }
+
+.regLogin_rightinner p {
+  font-size: 14px;
+  text-align: center; }
+
+#slSign_weibosina {
+  background: url(https://loginjs.shangpin.com/shangpin/images/page/login/sina_ico.png?v=20180118033533) no-repeat 0 0;
+  margin-left: 15px; }
+
+.inlb {
+  display: inline-block; }
+
+#slSign_weibosina {
+  background: url(https://loginjs.shangpin.com/shangpin/images/page/login/sina_ico.png?v=20180118033533) no-repeat 0 0;
+  margin-left: 15px; }
+
+#slSign_weixin, #slSign_alipay, #slSign_weibosina, #slSign_qq {
+  width: 51px;
+  height: 50px; }
+
+.other_logininner a {
+  margin-bottom: 8px;
+  margin-right: 20px; }
+
+#slSign_qq {
+  background: url(https://loginjs.shangpin.com/shangpin/images/page/login/qq_ico.png?v=20180118033533) no-repeat 0 0; }
+
+#slSign_weixin, #slSign_alipay, #slSign_weibosina, #slSign_qq {
+  width: 51px;
+  height: 50px; }
+
+#slSign_alipay {
+  background: url(https://loginjs.shangpin.com/shangpin/images/page/login/pay_ico.png?v=20180118033533) no-repeat 0 0;
+  margin-right: 0; }
+
+#slSign_weixin, #slSign_alipay, #slSign_weibosina, #slSign_qq {
+  width: 51px;
+  height: 50px; }
+
+.mgt10 {
+  margin-top: 10px; }
+
+.relt {
+  position: relative; }
+
+#spFooter_info {
+  background: #333;
+  height: 44px;
+  line-height: 36px;
+  color: #666;
+  text-align: center;
+  overflow: hidden; }
+
+#spFooter_info a:link, #spFooter_info a:visited {
+  color: #ccc;
+  float: left;
+  display: inline;
+  vertical-align: middle;
+  width: 105px;
+  text-align: center;
+  border-right: 1px solid #474747;
+  color: #fff;
+  padding: 4px 0;
+  overflow: hidden; }
+
+#spFooter_record {
+  padding: 12px 0;
+  text-align: center;
+  line-height: 30px; }
+
+#spFooter_record a {
+  padding: 0 8px 0 0; }
+
+#spFooter_record a:hover {
+  text-decoration: underline; }
+
+#spFooter_auth {
+  padding: 0 0 20px;
+  text-align: center; }
+
+#spFooter_auth a {
+  padding: 0 4px;
+  font-size: 0;
+  display: inline-block;
+  width: 76px;
+  height: 22px; }

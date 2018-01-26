@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>结算清单</title>
+	<link rel="stylesheet" type="text/css" href="../style/reset.css">
+	<link rel="stylesheet" type="text/css" href="../style/settlement.css">
+</head>
+<body>
+	<!-- tip top  start-->
+	<div class="box" id="sp_newHeader">
+        <div id="sp_newHeader_topLink" class="clr" style="width:960px; margin:0 auto">
+            <ul id="sp_newHeader_loginForm" class="frt">
+            	<input type="hidden" id="type" value="1">
+            	<li>欢迎Crystal,普通会员
+            	</li>
+            	<li>
+            		<a id="spNewHeader_usercenter" href="#js">个人中心</a>|
+            	</li>
+            		<input type="hidden" id="isLogin" value="0">
+            	</ul>
+            <script type="text/javascript">
+                if (loader) {
+                    loader.using("https://login.shangpin.com/passport/userinfo?t=1&amp;ran=1548093472");
+                    loader.excute();
+                }
+            </script>
+        </div>
+    </div>
+    <!-- tip top end -->
+
+    <!--  个人信息 start -->
+    	<div class="box clr">
+    		<div class="logotip">
+    			<div class="spLogo">
+    				<a href="index.html">
+                		<img src="http://pic15.shangpin.com/shangpin/images/logo/logo_v101.png" style="margin: 0 auto; width: 212px">
+            		</a>
+        		</div>
+
+        		<div class="alCart_Step msh">
+        			<ul class="alCart_Step msh">
+            			<li>
+            			    <p>
+            			        1我的购物袋
+            			    </p>
+            			</li>
+            			<li style="background: #000;color: #fff;">
+            			    <p>
+            			        2填写订单信息
+            			    </p>
+            			</li>
+            			<li>
+            			    <p>
+            			        3成功提交订单
+            			    </p>
+            			</li>
+        			</ul>
+        		</div>
+    		</div>
+
+   	    	<div class="alCart_notice">
+   			    温馨提示：购物袋中的商品无法保留库存，请您及时结算。
+   			</div>
+
+   			<div class="alOrder_Consignee">
+        <!-- 收货信息 -->
+        
+
+<!-- 收货信息 Start -->
+	<h2 class="clr">
+		<span>
+			<i>
+			</i>收货信息
+		</span>
+	</h2>
+    <dl class="olOrder_conList consingnee_list" id="consignee_load" style="	display: none">
+    </dl>
+<!-- 收货信息 End -->
+<!-- 新增收货地址 Start -->
+<div class="olOrder_newConsignee borderbtm">
+    <div class="new_Addr consignee_Addr" style="display: block;">
+        <div class="myinfo_Notice">
+        	<span>新增收货地址</span>
+        <em>　( 手机、固话选填一项，其余为必填项 )</em>
+    </div>
+	<div class="clr addr_form">
+	    <dl id="consnee_nameBox">
+	         <dt>
+	         	<em>*</em>&nbsp;收货人：</dt>
+	         <dd>
+	             <span>
+	             	<input type="text" value="" id="consnee_name">
+	         </span>
+	         </dd>
+	    </dl>
+	    <dl>
+	         <dt>
+	         	<em>*</em>&nbsp;地&nbsp;&nbsp;&nbsp;&nbsp;区：</dt>
+	         <dd>
+	             <span class="normal_txt">
+	                 <select id="ProvinceId" name="ProvinceId">
+	                 	<option value="-1">请选择</option>
+	                 	<option value="2">北京</option>
+	                 	<option value="3">天津</option>
+	                 	<option value="4">河北</option>
+	                 	<option value="5">山西</option>
+	                 	<option value="6">内蒙古</option>
+	                 	<option value="7">辽宁</option>
+	                 	<option value="8">吉林</option>
+	                 	<option value="9">黑龙江</option>
+	                 	<option value="10">上海</option>
+	                 	<option value="11">江苏</option>
+	                 	<option value="12">浙江</option>
+	                 	<option value="13">安徽</option>
+	                 	<option value="14">福建</option>
+	                 	<option value="15">江西</option>
+	                 	<option value="16">山东</option>
+	                 	<option value="17">河南</option>
+	                 	<option value="18">湖北</option>
+	                 	<option value="19">湖南</option>
+	                 	<option value="20">广东</option>
+	                 	<option value="21">广西</option>
+	                 	<option value="22">海南</option>
+	                 	<option value="23">重庆</option>
+	                 	<option value="24">四川</option>
+	                 	<option value="25">贵州</option>
+	                 	<option value="26">云南</option>
+	                 	<option value="27">西藏</option>
+	                 	<option value="28">陕西</option>
+	                 	<option value="29">甘肃</option>
+	                 	<option value="30">青海</option>
+	                 	<option value="31">宁夏</option>
+	                 	<option value="32">新疆</option>
+	                 </select>
+	                 <label>省/直辖市</label>
+	                 <select id="CityId" name="CityId">
+	                 	<option value="-1">请选择</option>
+	             </select>
+	                 <label>市</label>
+	                 <select id="AreaId" name="AreaId">
+	                 	<option value="-1">请选择</option>
+	             </select>
+	                 <label>区/县</label>
+	                 <select id="TownId" name="TownId">
+	                 	<option value="-1">请选择</option>
+	             </select>
+	                 <label>乡/镇</label>
+	             </span>
+	         </dd>
+	    </dl>
+	    <dl>
+	         <dt>
+	         	<em>*</em>&nbsp;地&nbsp;&nbsp;&nbsp;&nbsp;址：</dt>
+	         <dd>
+	             <span id="consnee_topaddr" class="normal_txt">
+	             </span>
+	             <span class="big_txt">
+	             	<input type="text" value="" id="consnee_addr">
+	             </span>
+	         </dd>
+	    </dl>
+	    <dl>
+	         <dt>
+	         	<em>*</em>&nbsp;邮&nbsp;&nbsp;&nbsp;&nbsp;编：</dt>
+	         <dd>
+	         	<span>
+	         	<input type="text" value="" maxlength="6" id="consnee_cod">
+	    </span>
+	    </dd>
+	    </dl>
+	    <dl>
+	         <dt>
+	         	<em>*</em>&nbsp;手&nbsp;&nbsp;&nbsp;&nbsp;机：</dt>
+	         <dd>
+	             <span>
+	             	<input type="text" value="" maxlength="11" id=consnee_mobile">
+	         </span>
+	             <span class="normal_txt" style="display:none">&nbsp;&nbs;或固话：</span>
+	             <label style="display:none">
+	             	<span class="small_txt normal">
+	             	<input type="text" value="" id="consnee_phone1">
+	         </span>
+	             <span class="normal_txt">&nbsp;&nbsp;-&nbsp;&nbsp;</span>
+	             <span class="phone">
+	             	<input type="text" value="" id="consnee_phone2">
+	         </span>
+	             <span class="normal_txt">&nbsp;&nbsp;-&nbsp;&nbsp;</span>
+	             <span class="small_txt normal">
+	             	<input type="text" value="" id="consnee_phone3">
+	         </span>
+	         </label>
+	         </dd>
+	    </dl>
+	    <dl>
+	         <dt>
+	         </dt>
+	         <dd>
+	             <input type="button" value="保存" id="consnee_save_submi" title="修改" class="submit_Btn" style="display: none;">
+	             <input type="button" value="保存" id="consnee_submit"title="新增" class="submit_Btn">
+	             <input type="button" value="取消" class="cancel_Btn">
+	             <i class="form_succeed" style="display:none;">保存成功</i>
+	         </dd>
+	    </dl>
+	</div>
+    </div>
+</div>
+	<!-- 新增收货地址 End -->
+
+        <!-- 支付到海外商品 报关信息 start-->
+        <!--海外商品 关税信息 end-->
+        <!-- 快递信息 Start -->
+        <h2 class="clr borderTop">
+        	<span>
+        	<i>
+        </i>送货时间</span>
+	    </h2>
+        <dl class="olOrder_express">
+            <dd>
+                <label for="allDay" class="order_express curr">
+                    <input type="radio" name="express" checked="checked" id="allDay" value="2">所有日期均可收货
+                </label>
+                <label for="workDay" class="order_express">
+                    <input type="radio" name="express" id="workDay" value="1" >工作日收货
+                </label>
+
+                <label for="holiDay" class="order_express ">
+                    <input type="radio" name="express" id="holiDay" value="3" > 双休日、节假日收货
+                </label>
+            </dd>
+        </dl>
+        <!-- 快递信息 End -->
+
+        <h2 class="clr  borderTop">
+            <span>
+            	<i>
+            </i>商品清单</span>
+                <a href="/trade/cart">&lt;&lt;&nbsp;返回修改购物袋</a>
+        </h2>
+
+        <!-- 国内商品清单 Start -->
+	        
+	    <div class="alCart_proList order_list">
+
+        <div class="alCart_proList_title">
+            商品从国内发货，预计3-5个工作日送达。国内发货商品统一收取运费，满499包邮
+        </div>
+
+        <div class="alCart_proList_th">
+            <ul class="clr">
+                <li class="th_item">商品名称</li>
+                <li class="th_price">商品价格</li>
+                <li class="th_amount">数量</li>
+                <li class="th_sum">小计</li>
+            </ul>
+        </div>
+
+            <div class="alCart_proList_content" id="alCart_proList_content">
+                <div class="commodity_list">
+                    <ul class="clr" olboxid="30829527002">
+                        <li class="td_item">
+                            <div class="td_item_img">
+                                <a href="http://www.shangpin.com/product/30829527" target="_blank">
+                                    <img width="90" height="120" style="opacity: 1;" src="http://pic3.shangpin.com/f/p/18/01/05/20180105112115359692-90-120.jpg" bigimg="http://pic3.shangpin.com/f/p/18/01/05/20180105112115359692-210-280.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="td_item_title clr">
+                                <p>
+                                	<a href="http://www.shangpin.com/product/30829527" target="_blank" no="30829527">GCDS 上帝不能毁灭街头</a>
+                                </p>
+                                <p>
+                                	<a id="30829527" href="http://www.shangpin.com/product/30829527" target="_blank">【杨幂同款】女士LOGO毛衣</a>
+                            </p>
+                                <p class="padt5">
+                                                <span class="color">
+                                                    <em>颜色：</em>红色
+                                                </span>
+                                                <span>
+                                                    <em>尺码：</em>M
+                                                </span>
+                                </p>
+                                <p class="order_attention">
+                                </p>
+                                <p class="return-attention clr">
+                                    <img src="http://pic3.shangpin.com/e/s/17/08/28/20170828162332767423-0-0.jpg" width="16" height="16" alt="">
+                                    <span>支持7天退换</span>
+                                </p>
+                                <i id="30829527002" style="display:none;">已使用折扣码</i>
+                            </div>
+                        </li>
+                        <li class="td_price">¥<font id="fontPrice_30829527002">2800</font>
+                        </li>
+                        <li class="td_amount">1</li>
+                        <li class="td_sum">
+                            <i class="price_sign">¥</i> 
+                            <span class="price_val" id="fontPriceSum_30829527002">
+                                2800
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        <!--国内商品运费-->
+        <div class="express_price">
+            运费：&nbsp;&nbsp; ¥
+            <span id="internalFreight">
+                0
+                
+            </span>
+            <span id="freightPrompt">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+	    </div>
+
+
+        <!-- 全球购商品清单 Start -->
+        
+        <!--使用优惠券start-->
+	        
+	
+	    <div class="alCart_proList_discount overseas_coupon_box clr" id="couponTicketList_ep">
+        <h2 class="clr borderTop">
+            <span>
+            	<i>
+            </i>优惠券</span> 
+        </h2>
+        <p>
+
+            <a href="javascript:;" class="useCoupons_overseas non">优惠券<span>您有<em class="coupon_number" id="emCountNon">1</em>张优惠券可用</span>&gt;</a>
+            <a href="javascript:;" class="useCouponsOpen_overseas">优惠券<span>您有<em class="coupon_number" id="emCount">1</em>张优惠券可用</span>&gt;</a>
+        </p>
+        <div id="spTab2" style="display:block">
+            <div class="discount_menu" style="display:none">
+                <span tabid="mytab-1-2" class="curr">可用优惠券（<em class="coupon_number" id="emCount1">1</em>）</span>
+            </div>
+            <div class="discount_content clr" id="spTab_cont2" style="border: 0px none;">
+                <div tabcontent="mytab-1-2" class="coupons clr">
+                    <div class="toActivate_container" style="display:none">
+                        <div class="active" id="active2">
+                            <div id="active_tipsbox2">
+                                <a href="javascript:;" id="active_closebtn2">×</a>
+                                <div id="txtTipsbox2">该优惠券激活码已被激活过，不能再次激活！</div>
+                                <i>
+                                </i>
+                            </div>
+                            <div class="zom" style="position: relative;">
+                                <label for="" style="position: absolute; top: 1px; left: 9px; cursor: text; color: rgb(153, 153, 153); line-height: 27px; z-index: 999;">请输入优惠券激活码</label>
+                                <input type="text" name="" value="" phdata="请输入优惠券激活码" id="active_code2" style="border: 1px solid rgb(177, 173, 170);">
+                                <a href="javascript:;" id="active_btn2" class="activeComm_btns msh" ctag="{&quot;bhv&quot;:&quot;jihuoquan&quot;,&quot;USIdKey&quot;:&quot;&quot;,&quot;USNameKey&quot;:&quot;&quot;,&quot;bhv_from&quot;:&quot;&quot;}">激活</a>
+
+                            </div>
+                            <a class="coupon_act" href="#this" id="couponsTip2" tips="将优惠券激活码激活后，可得到一张或多张优惠券，适用于当前订单的优惠券会自动显示在下面列表中。">什么是优惠券激活码？</a>
+                            <div class="coupon_ajax2" style="display:none">正在提交，请稍等…</div>
+                        </div>
+                        <p class="discount_explain">以下为您账号内的优惠券，每次只可使用一张。</p>
+                    </div>
+
+                        <p class="couponData" id="couponData2" style="display: block;">已使用&nbsp;&nbsp;
+                            <em>150.00</em> 
+                            元
+                            优惠券 一张，已优惠
+                            <em id="enCanUseAmount">150</em>元&nbsp;&nbsp;
+                            <a id="couponCancel2" date-favourable="150" date-refreahtype="2" href="javascript:;">取消使用</a>
+                        </p>
+
+                    <div class="alCart_couponList" id="alCart_couponList_ep" style="display:none">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                            	<tr>
+                                <th colspan="6">
+                                    <div class="tabBox">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <thead>
+                                                <tr>
+                                                    <th width="10%">类型</th>
+                                                    <th width="20%">描述</th>
+                                                    <th width="20%">有效期至</th>
+                                                    <th width="40%">使用说明</th>
+                                                    <th width="10%" class="last">操作</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                        </thead>
+                                    </table>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td colspan="6" style="padding:0;">
+                                    <div class="tabBox">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="couponsList" id="couponsList2">
+                                            <tbody>
+                                            	<tr class="noneTd">
+                                                <td width="10%">
+                                                </td>
+                                                <td width="20%">
+                                                </td>
+                                                <td width="20%">
+                                                </td>
+                                                <td width="40%">
+                                                </td>
+                                                <td width="10%">
+                                                </td>
+                                            </tr>
+                                                    <tr class="">
+                                                        <td>
+                                                            优惠券
+                                                        </td>
+                                                        <td>
+                                                            满1000元减150
+                                                        </td>
+                                                        <td>
+                                                            2018-02-24 23:59:59
+                                                        </td>
+                                                        <td class="explain" tips="尚品网通用，单笔订单满1000元使用，此券不可抵用关税与运费。">
+                                                            <em class="explainTop">尚品网通用，单笔订单满1000元使用，此券不可抵用关税与运费。</em>
+                                                        </td>
+                                                        <td>
+                                                                <input type="button" class="btn_operation" >
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="unable_used">
+                                                        <td>
+                                                            优惠券
+                                                        </td>
+                                                        <td>
+                                                            满3000元减300
+                                                        </td>
+                                                        <td>
+                                                            2018-02-24 23:59:59
+                                                        </td>
+                                                        <td class="explain" tips="尚品网通用，单笔订单满3000元使用，此券不可抵用关税与运费。">
+                                                            <em class="explainTop">尚品网通用，单笔订单满3000元使用，此券不可抵用关税与运费。</em>
+                                                        </td>
+                                                        <td>
+                                                                <font>不符合适用条件</font>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="unable_used">
+                                                        <td>
+                                                            优惠券
+                                                        </td>
+                                                        <td>
+                                                            满300元减50
+                                                        </td>
+                                                        <td>
+                                                            2018-02-24 23:59:59
+                                                        </td>
+                                                        <td class="explain" tips="仅限购买TOPSHOP/TOPMAN/MISS SELFRIDGE品牌商品满300元使用，此券不可抵用关税与运费。">
+                                                            <em class="explainTop">仅限购买TOPSHOP/TOPMAN/MISS SELFRIDGE品牌商品满300元使用，此券不可抵用关税与运费。</em>
+                                                        </td>
+                                                        <td>
+                                                                <font>不符合适用条件</font>
+                                                        </td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+	    </div>
+
+
+
+        <!--使用运费券start-->
+	        
+	
+	    <div class="alCart_proList_discount overseas_coupon_box clr" id="FreightCouponTicketList_ep" style="display:none">
+        <h2 class="clr borderTop">
+            <span>
+            	<i>
+            </i>运费券</span>
+        </h2>
+        <p>
+            <a href="javascript:;" class="useCoupons">运费券<span>您有<em class="coupon_number" id="emFreightCouponCount">0</em>张运费券可用</span>&gt;</a>
+            <a href="javascript:;" class="useCouponsOpen non">运费券<span>您有<em class="coupon_number" id="emFreightCouponCountNon">0</em>张运费券可用</span>&gt;</a>
+        </p>
+        <div id="spTab1" style="display:none">
+            <div class="discount_menu" style="display:block">
+                <span tabid="mytab-1-2" class="curr">可用运费券（<em class="coupon_number" id="emFreightCouponCount1">0</em>）</span>
+            </div>
+            <div class="discount_content  clr" id="spTab_cont" style="">
+                <div tabcontent="mytab-1-2" class="coupons clr">
+                    <div class="toActivate_container" style="display:block">
+
+                        <div class="active" id="active">
+                            <div id="active_tipsbox">
+                                <a href="javascript:;" id="active_closebtn">×</a>
+                                <div id="txtTipsbox">该运费券激活码已被激活过，不能再次激活！</div>
+                                <i>
+                                </i>
+                            </div>
+                            <div class="zom" style="position: relative;">
+                                <label for="" style="position: absolute; top: 1px; left: 9px; cursor: text; color: rgb(153, 153, 153); line-height: 27px; z-index: 999;">请输入激活码</label>
+                                <input type="text" name="" value="" phdata="请输入激活码" id="active_code" style="border: 1px solid rgb(177, 173, 170);">
+                                <a href="javascript:;" id="active_btn" class="activeComm_btns msh">激活</a>
+
+                            </div>
+                            <a class="coupon_act" href="#this" id="couponsTip" tips="将优惠券激活码激活后，可得到一张或多张优惠券，适用于当前订单的优惠券会自动显示在下面列表中。">什么是运费券激活码？</a>
+                            <div class="coupon_ajax">正在提交，请稍等…</div>
+                        </div>
+                        <p class="discount_explain">以下为本订单可以使用的运费券，每次只可使用一张。</p>
+                    </div>
+
+                        <p class="couponData couponData2" id="couponData">抱歉，您要结算的订单没有满足条件的优惠券可用！</p>
+                    <div class="alCart_couponList" style="display:block">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                            	<tr>
+                                <th colspan="6">
+                                    <div class="tabBox">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <thead>
+                                                <tr>
+                                                    <th width="10%">类型</th>
+                                                    <th width="20%">描述</th>
+                                                    <th width="20%">有效期至</th>
+                                                    <th width="40%">使用说明</th>
+                                                    <th width="10%" class="last">操作</th>
+                                                </tr>
+                                            </thead>
+                                            <thead>
+                                        </thead>
+                                    </table>
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td colspan="6" style="padding:0;">
+                                    <div class="tabBox">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="couponsList" id="couponsList">
+                                            <tbody>
+                                            	<tr class="noneTd">
+                                                <td width="10%">
+                                                </td>
+                                                <td width="20%">
+                                                </td>
+                                                <td width="20%">
+                                                </td>
+                                                <td width="40%">
+                                                </td>
+                                                <td width="10%">
+                                                </td>
+                                            </tr>
+                                                <tr id="trNoCoupons">
+                                                    <td colspan="5" class="center">
+                                                        您暂没有满足使用条件的运费券。
+                                                    </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+	    </div>
+
+
+        <!-- 使用尚品币 start -->
+        
+
+
+
+
+        <!-- 购买金牌会员 start -->
+        
+
+	    <div class="alCart_proList_discount overseas_coupon_box clr">
+        <h2 class="clr borderTop">
+            <span>
+            	<i>
+            </i>购买金牌会员</span>
+        </h2>
+	      
+	    <p class="spCoin">
+        <label>
+        	<input type="radio" name="spVip" id="buyPrime_yes">购买金牌会员<font id="fontBuyPrimePrompt">,购买会员可立即节省¥280</font>
+	    </label>
+        <label>
+        	<input type="radio" name="spVip" id="buyPrime_no" checked="checked">暂不购买</label>
+	   </p>
+
+    </div>
+
+
+        <!-- 发票信息 Start -->
+        
+
+
+	<h2 class="clr borderTop">
+    <span>
+        
+        <i>
+        </i>
+        发票信息
+    </span>
+	</h2>
+	<div id="divInvoiceNo" style="display: none;">
+	    <p class="overseas_notice">个人跨境和特殊商品不支持开发票</p>
+	</div>
+	<div id="divInvoiceYse">
+    <div class="clr olOrder_invoice_wp">
+        <dl class="olOrder_invoice">
+            <h3>
+                <i class="txt_margin">发票类型：</i>
+                <label for="invoice_yes">
+                    <input name="invoice" type="radio" id="invoice_yes">电子发票
+                </label>
+                <label for="invoice_no">
+                    <input type="radio" name="invoice" id="invoice_no" checked="checked">不开发票
+                </label>
+            </h3>
+            <dd style="display:none">
+                <i class="txt_margin">发票抬头：</i>
+                <label for="invoice_person" class="width130">
+                    <input name="titles" type="radio" id="invoice_person" checked="checked">个人
+                </label>
+                <em>
+                    <input type="radio" name="titles" id="invoice_org">
+                    <label for="invoice_org">单位</label>
+                    
+
+                </em>
+            </dd>
+            <dd id="ddOrg" style="display:none">
+                <i class="txt_margin">单位名称：</i>
+                <em style="position: relative;">
+                    <label for="org" style="position: absolute; top: 0px; left: 7px; cursor: text; color: rgb(153, 153, 153); line-height: 25px; z-index: 999;">请填写单位名称，如不填则默认显示'单位'</label>
+                    <input type="text" name="org" id="invoice_org_title" class="text_input" phdata="请填写单位名称，如不填则默认显示'单位'" value="" style="border: 1px solid rgb(177, 173, 170);">
+                </em>
+            </dd>
+            <dd id="ddTaxPayerNo" style="display:none">
+                <i class="txt_margin">纳税人识别号：</i>
+                <em style="position: relative;">
+                    <label for="taxPayerNo_input" style="position: absolute; top: 0px; left: 7px; cursor: text; color: rgb(153, 153, 153); line-height: 25px; z-index: 999;">请填写纳税人识别号码或社会信用代码，必填</label>
+                    <input type="text" name="taxPayerNo_input" id="taxPayerNo_input" class="text_input" phdata="请填写纳税人识别号码或社会信用代码，必填" value="" style="border: 1px solid rgb(177, 173, 170);">
+                </em>
+            </dd>
+            <dd style="display:none">
+                <i class="txt_margin">发票内容：</i>
+                <select>
+                    <option value="商品全称">商品全称</option>
+                    
+                </select>&nbsp;&nbsp;&nbsp;&nbsp;<span class="prompt">温馨提示：手表类商品只能开具为品牌和型号，其他内容无法开具</span>
+            </dd>
+            <dd style="display:none">
+                <i class="txt_margin">收票人电话：</i>
+                <em style="position: relative;">
+                    <label for="mobile" style="position: absolute; top: 0px; left: 7px; cursor: text; color: rgb(153, 153, 153); line-height: 25px; z-index: 999; display: none;">请填写收票人电话</label>
+                    <input type="text" name="mobile" id="mobile_input" class="text_input" phdata="请填写收票人电话" value="" style="border: 1px solid rgb(177, 173, 170);">
+                </em>
+            </dd>
+            <dd style="display:none">
+                <i class="txt_margin">收票人邮箱：</i>
+                <em style="position: relative;">
+                    <label for="mail" style="position: absolute; top: 0px; left: 7px; cursor: text; color: rgb(153, 153, 153); line-height: 25px; z-index: 999;">请填写收票人邮箱</label>
+                    <input type="text" name="mail" id="mail_input" class="text_input" phdata="请填写收票人邮箱" value="" style="border: 1px solid rgb(177, 173, 170);">
+                </em>
+            </dd>
+            <dd class="invoice_saveBox" style="display:none">
+            </dd>
+        </dl>
+    </div>
+
+
+    <div class="clr invoice_msgBox">
+        <span>
+            电子发票是税局认可的有效凭证，其法律效力、基本用途及使用规定同纸质发票，如需纸质发票可自行下载打印。<br>成功开票后您可到个人中心-我的订单下载电子发票。<br>据税务局相关规定，发票抬头为单位须填写纳税人识别号或统一社会信用代码
+        </span>
+    </div>
+	</div>
+
+        <!--礼品卡支付-->
+	        
+	
+	<h2 class="clr  borderTop">
+	<span>
+    
+                               <i>
+                               </i>
+    支付方式</span>
+	</h2>
+	
+	
+	        <!--银行卡支付（全部支付方式） start-->
+            <div id="divPayTypeIn" style="">
+                <div class="PaymentBank_content" id="spTabs">
+                    <h3>支付平台</h3>
+
+                    <div class="bank_content_bg">
+                        <span class="prompt">
+                            您需要继续支付剩余<span>¥<em id="amountPayment" class="totalNum">NaN</em>
+                            </span>
+                        </span>
+	                        
+	<div class="bank_Type" id="spTabs_menu">
+    <span tabid="mytab-1" class="curr">支付宝</span>
+    <span tabid="mytab-7">微信支付</span>
+    <span tabid="mytab-3" data-id="card">银行卡</span>  
+	</div>
+	<div class="bank_Block" id="spTabs_content">
+    <div tabcontent="mytab-1" class="bank_Content bank_Content_title">
+        <dl>
+            <dd class="clr">
+                
+                <span class="alipay" title="支付宝" payno="13_30_119_alipayfz" bankname="支付宝">
+                	<a href="#">
+                </a>
+            </span>
+                <em>无需开通网银，有银行卡就能付款</em>
+            </dd>
+        </dl>
+    </div>
+
+    <div tabcontent="mytab-3" class="bank_Content non">
+        <dl>
+            <dt class="mytab-1-list">
+            	<a href="javascript:;" class="open">网银支付（支持信用卡和储蓄卡）：</a>
+        </dt>
+            <dd class="clr">
+                <span class="CMB" payno="0_15_2_cmb" title="招商" bankname="招商银行">
+                    <a href="#">
+                    </a>
+                    <!--限额浮层-->
+                    <div class="pop-up">
+                        <h3>网银支付限额如下：</h3>
+                        <table width="385">
+                            <tbody>
+                            	<tr>
+                                <th rowspan="2">卡类型</th>
+                                <th colspan="2">大众版网银</th>
+                                <th colspan="2">专业版网银</th>
+                                <th>手机支付</th>
+                            </tr>
+                            <tr>
+                                <th>单笔限额</th>
+                                <th>每日限额</th>
+                                <th>单笔限额</th>
+                                <th>每日限额</th>
+                                <th>支付限额</th>
+                            </tr>
+                            <tr>
+                                <td>信用卡</td>
+                                <td colspan="2">无限额</td>
+                                <td colspan="2">无限额</td>
+                                <td colspan="2">无限额</td>
+                            </tr>
+                            <tr>
+                                <td>借记卡</td>
+                                <td>5000</td>
+                                <td>5000</td>
+                                <td colspan="2">无限额</td>
+                                <td>5000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                        <i class="popArrow">
+                        </i>
+                    </div>
+                    <!--end-->
+                </span>
+                
+                
+                <span class="BJ" title="北京" payno="0_29_100_BJBANK" bankname="北京银行">
+                    <a href="#">
+                    </a>
+                    <div class="pop-up pop-up-width-left570">
+                        <h3>网银支付限额如下：</h3>
+                        <table>
+                            <tbody>
+                            	<tr>
+                                <th rowspan="2">卡类型</th>
+                                <th colspan="2">开通动态密码版网上支付功能</th>
+                                <th colspan="2">开通证书版网上支付</th>
+                                <th rowspan="2">备注</th>
+                            </tr>
+                            <tr>
+                                <th>单笔限额</th>
+                                <th>每日限额</th>
+                                <th>单笔限额</th>
+                                <th>每日限额</th>
+                            </tr>
+                            <tr>
+                                <td>信用卡</td>
+                                <td>&lt;1000元</td>
+                                <td>&lt;5000元</td>
+                                <td>100万元</td>
+                                <td>100万元</td>
+                                <td rowspan="2">普通用户可直接登录，总累计限额300元</td>
+                            </tr>
+                            <tr>
+                                <td>借记卡</td>
+                                <td>&lt;1000元</td>
+                                <td>&lt;5000元</td>
+                                <td>100万元</td>
+                                <td>100万元</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                        <i class="popArrow">
+                        </i>
+                    </div>
+                </span>
+                
+            </dd>
+        </dl>
+        
+    </div>
+
+ 
+    <!--LYL 新增加微信支付方式-->
+    <div tabcontent="mytab-7" class="bank_Content non">
+        <dl>
+            <dd class="clr">
+                <span class="weixinpay" title="微信" payno="27_27_56_weixin" bankname="支付宝">
+                	<a href="#">
+                </a>
+            </span>
+                <em>无需开通网银，有银行卡就能付款</em>
+            </dd>
+
+        </dl>
+    </div>
+	    
+	</div>
+
+
+
+   
+                    </div>
+                </div>
+            </div>
+            <div id="divPayTypeEp" style="display:none">
+                <div class="PaymentBank_content" id="spTabs-2">
+                    <h3>支付平台</h3>
+
+                    <div class="bank_content_bg">
+                        <span class="prompt">
+                            您需要继续支付剩余<span>¥<em id="amountPayment" class="totalNum">NaN</em>
+                            </span>
+                        </span>
+                        <div class="bank_Type" id="spTabs_menu-2">
+    <span tabid="mytab-2-1" class="curr">支付宝</span>
+    <span tabid="mytab-2-2">其它支付方式</span>
+	    
+	</div>
+	<div class="bank_Block" id="spTabs_content-2">
+    <div tabcontent="mytab-2-1" class="bank_Content">
+        <dl>
+            <dd class="clr">
+                <span class="alipay" title="支付宝" payno="13_30_119_alipayfz">
+                    <a href="#">
+                    </a>
+                </span>
+                <em>无需开通网银，有银行卡就能付款</em>
+            </dd>
+        </dl>
+    </div>
+    <div tabcontent="mytab-2-2" class="bank_Content non">
+        <dl>
+            <dd class="clr">
+                <span class="weixinpay" title="微信" payno="32_32_56_weixinhw">
+                	<a href="#">
+                </a>
+            </span>
+                <em>无需开通网银，有银行卡就能付款</em>
+            </dd>
+
+        </dl>
+    </div>
+	
+	</div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div id="PayTypeSplit" style="display:none">
+                <div class="PaymentBank_content" id="spTabs-3">
+                    <h3>支付平台</h3>
+
+                    <div class="bank_content_bg">
+                        <span class="prompt">
+                            您需要继续支付剩余<span>¥<em id="amountPayment" class="totalNum">NaN</em>
+                            </span>
+                        </span>
+                        <div class="bank_Type" id="spTabs_menu-3">
+	    <span tabid="mytab-3-1" class="curr">支付宝</span>
+	</div>
+	<div class="bank_Block" id="spTabs_content-3">
+    <div tabcontent="mytab-3-1" class="bank_Content">
+        <dl>
+            <dd class="clr">
+                <span class="alipay" title="支付宝" payno="13_30_119_alipayfz">
+                    <a href="#">
+                    </a>
+                </span>
+                <em>无需开通网银，有银行卡就能付款</em>
+            </dd>
+        </dl>
+    </div>
+	</div>
+	                    </div>
+	                </div>
+	            </div>
+	        <!--银行卡支付 end-->
+   	     <!--错误提示start-->
+   	     <div class="error_message" id="error_message">
+   	     </div>
+   	     <!--错误提示end-->
+   	 </div>
+   	 	</div>
+    <!-- 个人信息end -->
+</body>
+</html>

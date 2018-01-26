@@ -1,0 +1,280 @@
+.box {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+    #sp_newHeader_topLink {
+	    height: 28px;
+	    line-height: 28px;
+	}
+	#sp_newHeader * {
+	    font-family: 'PingHei','PingFang SC','Helvetica Neue','Helvetica',Arial,"宋体";
+	}
+	#sp_newHeader_topLink{
+		height: 28px;
+    	line-height: 28px;
+    	.frt {
+		    float: right;
+		    display: inline;
+		}
+		 ul{
+			 #sp_newHeader_loginForm li {
+			    margin-left: 6px;
+			}
+			li {
+			    float: left;
+			    height: 28px;
+			    line-height: 28px;
+			    line-height: 30px;
+			    margin-left: 8px;
+			    color: #666;
+				a {
+				    color: #686868;
+				    text-decoration: none;
+				    padding: 3px 0;
+				    display: inline-block;
+				    height: 20px;
+				    line-height: 20px;
+				    border: 1px solid #fff;
+				    border-bottom: 0;
+				}
+			}
+		 }
+	}
+}
+.logotip{
+	width: 960px;
+	margin:0 auto;
+	height: 44px;
+	padding-top:8px;
+	.spLogo{
+		float: left;
+		a{
+			display: block;
+			img{
+				width: 212px;
+				margin: 0 auto;
+			}
+		}
+	}
+	.alCart_Step{
+		float: right;
+		li{
+		    width: 145px;
+    		float: left;
+    		height: 36px;
+    		background-color: #f1f1f1;
+    		color: #333;
+    		position: relative;
+    		p{
+			    width: 130px;
+			    margin: 0 auto;
+			    height: 36px;
+			    line-height: 36px;
+			    font-size: 12px;
+			    text-align: center;
+    		}
+		}
+	}
+}
+
+.alCart_notice{
+	height: 30px;
+   	line-height: 30px;
+   	margin: 15px auto 15px;
+   	background: url(http://pic15.shangpin.com/shangpin/images/page/order/order_icon_new02.gif?v=20180118033533) -181px -327px no-repeat;
+   	padding-left: 25px;
+   	color: #888;
+   	font-size: 12px;
+   	line-height: 30px;
+}
+
+.alOrder_Consignee {
+    width: 958px;
+    margin: 0 auto;
+    border: 1px solid #e2e2e2;
+    h2 {
+	    padding: 0 25px;
+	    font-size: 14px;
+	    height: 22px;
+	    line-height: 22px;
+	    background: #f4f4f4;
+	    margin: 5px;
+	    position: relative;
+	    span {
+		    display: block;
+		    float: left;
+		    padding: 0 10px 0 0;
+		    color: #000;
+		    font-size: 14px;
+		    i {
+			    display: inline-block;
+			    padding-right: 10px;
+			}
+		}
+	}
+}
+.myinfo_Notice {
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 45px;
+    padding: 0 40px;
+    em{
+    	font-size: 12px;
+    }
+}
+
+.addr_form {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+    dl {
+	    width: 100%;
+	    float: left;
+	    margin: 10px 0 0 0;
+	    dt{
+	        height: 30px;
+		    line-height: 25px;
+		    float: left;
+		    color: #666;
+		    width: 105px;
+		    padding: 0 10px 0 0;
+		    text-align: right;
+		    em{
+		        color: #ecafb4;
+    			vertical-align: middle
+		    }
+	    }
+		dd {
+   		width: auto;
+   		height: 30px;
+    	line-height: 25px;
+    	float: left;
+    	color: #666;
+    	span{
+    		display: inline;
+    		width: 130px;
+    		float: left;
+			input{
+			    vertical-align: middle;
+   				position: relative;
+   				top: -1px;
+			}
+    	}
+		}
+	}
+	dd {
+		height: 30px;
+    	line-height: 25px;
+    	float: left;
+    	color: #666;
+		span{
+	    	display: inline;
+	    	float: left;
+			.normal_txt {
+	    		border: 0;
+	    		padding: 3px 0;
+	    		width: auto;
+	    		height: 18px;
+	    		line-height: 18px;
+	    		box-shadow: none;
+	    		-webkit-box-shadow: none;
+	    		select{
+	    	    	border: 1px solid #a9a9a9;
+    				margin: 0;
+    				float: left;
+    		    	white-space: nowrap;
+    		    	width: auto;
+    		    	option {
+					    font-weight: normal;
+					    display: block;
+					    white-space: pre;
+					    min-height: 1.2em;
+					    padding: 0px 2px 1px;
+					}
+	    		}	
+			}
+		}
+	}
+	dt{
+	    height: 30px;
+    	line-height: 25px;
+    	float: left;
+    	color: #666;
+    	width: 105px;
+    	padding: 0 10px 0 0;
+    	text-align: right;
+	}
+	.submit_Btn{
+	    border: 0;
+    	width: auto;
+    	height: 30px;
+    	line-height: 30px;
+    	color: #FFF;
+    	margin-right: 10px;
+    	cursor: pointer;
+    	padding: 0 20px;
+    	text-align: center;
+    	display: inline-block;
+    	background: #0700c5;
+    	.cancel_Btn{
+    	    background: #ececec;
+    		color: #383838;
+    		height: 30px;
+    		line-height: 30px;
+    		margin-right: 10px;
+    		cursor: pointer;
+    		padding: 0 20px;
+    		text-align: center;
+    		display: inline-block;
+    		border: 0;
+    	}
+	}
+}
+.olOrder_express {
+    padding: 30px 40px;
+    border-bottom: 1px solid #d5d5d5;
+    dd{
+        line-height: 38px;
+    	margin: 0;
+    	color: #333;
+		label{
+		    cursor: pointer;
+		    width: 168px;
+		    height: 36px;
+		    border: 1px solid #d4d4d4;
+		    display: inline-block;
+		    line-height: 36px;
+		    text-align: center;
+		    margin-right: 5px;
+		    padding: 2px;
+			.curr {
+			    cursor: pointer;
+			    border: 1px solid #2d2d2d;
+			    padding: 1px;
+			    background: #fff;
+			    input{
+			    	vertical-align: middle;
+			    	margin-right: 2px;
+			    }
+			}
+		}
+    }
+}
+.alCart_proList {
+    width: 100%;
+    background: 0;
+    border-bottom: 1px solid #D5D5D5;
+	.alCart_proList_title {
+	    height: 18px;
+	    line-height: 18px;
+	    padding: 11px 40px;
+	    font-size: 14px;
+	    color: #666;
+	    font-family: 'PingHei','PingFang SC','Helvetica Neue','Helvetica',"微软雅黑","Microsoft YaHei","黑体","Tahoma","宋体";
+	}
+	.alCart_proList_th {
+	    background-color: #f3f3f3;
+	}
+}

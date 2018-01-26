@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" type="text/css" href="../style/index.css">
+	<link rel="stylesheet" type="text/css" href="../style/reset.css">
+	<link rel="stylesheet" type="text/css" href="../style/shoppingcar.css">
+</head>
+<body>
+	<div class="box" id="sp_newHeader">
+        <div id="sp_newHeader_topLink" class="clr" style="width:960px; margin:0 auto">
+            <ul id="sp_newHeader_loginForm" class="frt">
+            	<input type="hidden" id="type" value="1">
+            	<li>欢迎
+            		<span id="currentUser">Crystal,普通会员</span>
+            	</li>
+            	<li>
+            		<a id="spNewHeader_usercenter" href="http://account.shangpin.com/account" class="" style="position: relative; z-index: 1;">个人中心</a>|
+            	</li>
+            		<input type="hidden" id="isLogin" value="0">
+            </ul>
+        </div>
+    </div>
+
+
+<!-- 物品 -->
+<div class="box" style="overflow: visible; position:relative; z-index:9">
+    <div class="clr">
+        <div class="spLogo">
+            <a href="#js">
+                <img src="http://pic15.shangpin.com/shangpin/images/logo/logo_v101.png" style="margin: 0 auto; width: 212px">
+            </a>
+        </div>
+        <ul class="alCart_Step msh">
+            <li class="cur">
+                <p><em>1</em>我的购物袋</p>
+                <span></span>
+            </li>
+            <li>
+                <p><em>2</em>填写订单信息</p>
+                <span></span>
+            </li>
+            <li class="last_step">
+                <p><em>3</em>成功提交订单</p>
+            </li>
+        </ul>
+    </div>
+    <div class="alCart_notice" style="margin: 5px auto">温馨提示：购物袋中的商品无法保留库存，请您及时结算。</div>
+    <div id="spTabs" class="clr">
+        <div class="alCart_proList" id="spTab_content">
+            <!--购物start-->
+            <div class="mainland_shopping" tabcontent="mytab-1">
+                <div class="alCart_table_th">
+                    <ul class="clr">
+                        <li class="th th_chk">
+                            <label><input class="checkAllBtn" name="" type="checkbox" value="">全选</label>
+                        </li>
+                        <li class="th th_item"></li>
+                        <li class="th th_price">价格</li>
+                        <li class="th th_amount">数量</li>
+                        <li class="th th_sum">小计</li>
+                        <li class="th th_op">操作</li>
+                    </ul>
+                </div>
+                <!--海外购商品提示-->
+            </div>
+               <div class="car-content">
+               		<img src="../images/20180125142255.png" style="width: 960px;height: 160px;">
+               </div>
+                <div class="clr cart_bottom noSelectPro">
+                    <div class="text">
+                        
+                    <div class="commodity_money new_commodity_money">
+                        商品金额：<i>¥</i><em>2800</em>
+                    </div>
+                    <div class="cart_bottom_right clr">
+                        <div class="clr weixin_bottom">
+                            <img src="http://pic14.shangpin.com/shangpin/images/page/order/wx_banner.jpg" width="310" height="80">
+                            <div class="settlement_box">
+                                <a style="width: 180px;height: 30px;background: #fff;color:#000;border: 1px solid #000;" href="#js" target="_blank" class="return">继续购物</a>
+                                <a id="settlement_btn" href="settlement.html">结算(1)</a>
+                                <!--<a class="settlement_ing" style="display:none;">正在提交请稍候...</a>-->
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <!--购物end-->
+        </div>
+    </div>
+</div>
+
+
+<!-- 底部 -->
+<div id="spFooter" class="box mgt10 relt">
+    <p id="spFooter_info">
+	    <a href="#js">关于尚品</a>
+	    <a href="#js">尚品新闻</a>
+	    <a href="#js">招聘信息</a>
+	    <a href="#js">品牌招商</a>
+	    <a href="#js">帮助中心</a>
+	    <a href="#js">联系我们</a>
+	    <a href="#js">友情链接</a>
+	    <a href="#js">网站地图</a>
+	    <a href="#js" style="border-right:none">搜索直通车</a>
+    </p>﻿
+<p id="spFooter_record">
+    <a href="#js">京公网安备110105001984</a>
+    <a href="#js">京ICP备09087291号-2</a>
+    <a href="#js" style="font-style: normal;">京ICP证090703号</a><i>Copyright © 2010-2016Shangpin.com All Rights Reserved</i>
+</p>
+<p id="spFooter_auth">
+	<a href="#js">
+		<img src="http://pic12.shangpin.com/shangpin/images/foot5.gif?v=809" style="opacity: 1;">
+	</a>
+	<a href="#js">
+		<img src="http://pic15.shangpin.com/shangpin/images/foot6.gif?v=809" style="opacity: 1;">
+	</a>
+	<a href="#js" style="width: 62px" target="_blank">
+		<img src="http://pic12.shangpin.com/shangpin/images/public/cx.png" style="opacity: 1;">
+	</a>
+	<a href="#js">
+		<img src="http://pic13.shangpin.com/shangpin/images/foot8.gif?v=809" style="opacity: 1;">
+	</a>
+	<a href="#js">
+		<img src="http://pic13.shangpin.com/shangpin/images/foot10.gif" style="opacity: 1;">
+	</a>
+	<a href="#js">
+		<img src="http://pic14.shangpin.com/shangpin/images/foot11.gif" style="opacity: 1;">
+	</a>
+	<a href="#js">
+		<img src="http://pic12.shangpin.com/shangpin/images/foot13.gif" style="opacity: 1;">
+	</a>
+</p>
+<script type="text/javascript">
+var _mvq = window._mvq || []; 
+window._mvq = _mvq;
+_mvq.push(['$setAccount', 'm-275919-0']);
+_mvq.push(['$logConversion']);
+(function() {
+	var mvl = document.createElement('script');
+	mvl.type = 'text/javascript'; mvl.async = true;
+	mvl.src = ('https:' == document.location.protocol ? 'https://static-ssl.mediav.com/mvl.js' : 'http://static.mediav.com/mvl.js');
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(mvl, s); 
+})();	
+</script>
+        
+    </div>
+</body>
+</html>

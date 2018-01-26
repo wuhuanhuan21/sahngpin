@@ -1,0 +1,551 @@
+.sp-container{
+	
+}
+.listBrandTitle{
+	text-align:center;
+	h1 {
+	    color: #000;
+	    font-size: 28px;
+	    padding-top: 8px;
+	}
+	p {
+	    color: #888;
+	    font-size: 16px;
+	    margin-bottom: 10px;
+	}
+}
+.list-box{
+	width: 1200px;
+	margin: 0 auto;
+}
+.spList-navtitle {
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 20px;
+    background: #fff;
+    width: 1200px;
+    z-index: 199;
+	.navtitle-right {
+
+	    float: right;
+	    line-height: 40px;
+	    .columnImg {
+		    width: 120px;
+		    height: 22px;
+		    display: inline-block;
+		    position: relative;
+		    top: 7px;
+		    margin-right: 25px;
+			a {
+			    display: inline-block;
+			    width: 22px;
+			    height: 22px;
+			    margin-right: 15px;
+				.four {
+				    background: url(http://pic13.shangpin.com/shangpin/static/img/list/col.png?v=20180118033533) 0 0;
+					.cur {
+					    background: url(http://pic13.shangpin.com/shangpin/static/img/list/col.png?v=20180118033533) 0 -22px;
+					}
+				}
+				.three {
+				    background: url(http://pic13.shangpin.com/shangpin/static/img/list/col.png?v=20180118033533) 0 -44px;
+				}
+				.two {
+				    background: url(http://pic13.shangpin.com/shangpin/static/img/list/col.png?v=20180118033533) 0 -88px;
+				}
+			}
+		}
+		.sort_select {
+		    width: 130px;
+		    height: 20px;
+		    line-height: 20px;
+		    display: inline-block;
+		    position: relative;
+		    text-align: left;
+		    font-size: 13px;
+			span {
+			    padding-left: 8px;
+			    position: relative;
+			    color: #010101;
+			    height: 20px;
+			    line-height: 20px;
+			    float: none;
+			    margin-left: 0;
+			}
+		}
+	}
+	span {
+	    float: left;
+	    line-height: 40px;
+	}
+	form {
+	    display: inline-block;
+	    width: 170px;
+	    text-align: left;
+	    margin-left: 175px;
+	    height: 40px;
+	    line-height: 37px;
+		label {
+		    float: left;
+		    display: block;
+		    position: relative;
+		    margin-right: 7px;
+			a {
+			    color: #000;
+			}
+			input {
+			    width: 12px;
+			    height: 12px;
+			    border: 1px solid #ccc;
+			    text-align: center;
+			    margin: 12px 2px;
+			    outline: 1px;
+			    border: 1px;
+			    float: left;
+			}
+			i {
+			    position: absolute;
+			    top: 12px;
+			    left: 2px;
+			    display: block;
+			    width: 10px;
+			    height: 10px;
+			    outline: 0;
+			    border: 1px solid #ccc;
+			    background: #fff;
+			    border-radius: 50%;
+			}
+		}
+	}
+}
+input, select {
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+}
+
+.clr:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.sp_cramb{
+	width: 1200px;
+	height: 30px;
+	display: block;
+	margin:0 auto;
+	ul{
+		height: 30px;
+		width: 1200px;
+		margin-top:20px;
+		li{
+			float: left;
+			a{
+				color: #888;
+			}
+		}
+	}
+}
+.putlarge{
+	margin:0 auto;
+	width: 1200px;
+	position: relative;
+}
+.swiper-pagination-bullet{
+	height: 755px;
+	width: 70px;
+	float: left;
+	img{
+		border:1px solid #ddd;
+	}
+}
+.small {
+	width: 566px;
+	height: 755px;
+	position: relative;
+	margin-top: 30px;
+	margin-left:80px;
+	img{
+		width: 100%;
+		height: 100%;
+	}
+	.wrap{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 999;
+	}
+	.grayBox{
+		display: none;
+		width: 168px;
+		height: 226px;
+		background-image: url(http://pic5.shangpin.com/f/p/17/05/04/20170504123452985792-800-1066.jpg);
+		background-size:566px 755px;
+		background-position: 0 0;
+		box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}	
+.detail-con{
+	float: left;
+	position: absolute;
+	top:0;
+	right: 0;
+    width: 524px;
+	.attention {
+	    color: #0700c5;
+	    float: left;
+	    margin: 5px 0 2px;
+	    width: 100%;
+	    display: none;
+	}
+	.fa-angle-down, .fa-angle-up {
+	    background-position: 12px -1px;
+	    background-repeat: no-repeat;
+	}
+	.gold_member {
+	    display: inline-block;
+	    font-size: 12px;
+	    color: #0700c5;
+	    border: 1px solid #0700c5;
+	    padding: 0 8px;
+	    height: 18px;
+	    line-height: 20px;
+	    text-align: center;
+	    margin: 0 0 0 10px;
+	    text-decoration: none;
+	}
+	h2 {
+	    font-size: 26px;
+	    line-height: 26px;
+		span a {
+		    color: #000;
+		}
+	}
+	.detail-item-num .new_pro {
+	    font-size: 12px;
+	    color: #000;
+	    border: 1px solid #000;
+	    padding: 2px 8px;
+	    height: 20px;
+	    line-height: 20px;
+	    text-align: center;
+	    margin: 0 10px 0 0;
+	}
+}
+.detail-item-desc {
+    font-size: 14px;
+    margin: 16px 0;
+    color: #000;
+    width: 400px;
+    line-height: 16px;
+}
+.detail-item-gold {
+    font-size: 15px;
+    margin: 15px 0 50px;
+    color: #000;
+    width: 100%;
+    line-height: 15px;
+    span {
+	    font-size: 20px;
+	    color: #000;
+	}
+}
+.detail-item-first {
+    font-size: 14px;
+    color: #000;
+    background: #eee;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    margin: 12px 0;
+}
+.detail-proColor {
+    margin: 12px 0;
+	li {
+	    display: block;
+	    float: left;
+	    margin-right: 2px;
+	    font-size: 13px;
+	}
+}
+.select_size {
+    width: 100%;
+	.stock {
+	    width: 450px;
+	    float: left;
+	    margin-top: 12px;
+	    margin-right: 10px;
+		p {
+		    color: #0700c5;
+		}
+	}
+	.size-guide {
+	    float: right;
+	    margin: 12px 0;
+	    font-size: 14px;
+	    color: #888;
+	    border-bottom: 1px solid #888;
+	}
+	.select_list {
+		li {
+		    display: block;
+		    float: left;
+		    margin-right: 20px;
+		    font-size: 13px;
+		    margin-bottom: 10px;
+
+			em {
+			    width: 52px;
+			    height: 52px;
+			    display: block;
+			    border-radius: 50%;
+			    border: 1px solid #fff;
+			    margin-bottom: 2px;
+				b {
+				    width: 52px;
+				    height: 28px;
+				    display: block;
+				    margin: 12px auto;
+				    font-size: 10px;
+				    text-align: center;
+				    line-height: 28px;
+				    color: #888;
+				}
+			}
+			.cmOver em b {
+			    color: #ccc;
+			}
+		}
+	} 
+}
+.detail-btn {
+	a {
+	    display: block;
+	    float: left;
+	    width: 252px;
+	    line-height: 44px;
+	    text-align: center;
+	    color: #000;
+	    font-size: 16px;
+		.add-bag-btn,.sale-gray {
+		    background: #000;
+		    color: #fff;
+		    font-weight: 500;
+		    margin-right: 20px;
+		    transition: 400ms linear;
+		}
+	    .sale-gray {
+		    background: #fff;
+		    color: #888;
+		    border: 1px solid #888;
+		    opacity: .3;
+		    width: 250px;
+		    line-height: 42px;
+		}
+	}
+}
+.select_wish {
+    width: 252px;
+    height: 44px;
+    line-height: 44px;
+    float: left;
+    transition: background-color .5s cubic-bezier(0.215,.61,.355,1),color .5s cubic-bezier(0.215,.61,.355,1),border-color .5s cubic-bezier(0.215,.61,.355,1);
+}
+.add-wish {
+    width: 252px;
+    height: 44px;
+    line-height: 44px;
+    display: inline-block;
+    text-align: left;
+    font-size: 16px;
+	li {
+	    position: relative;
+		span {
+		    display: block;
+		    padding-left: 47px;
+		    border: 1px solid #e5e5e5;
+		    height: 42px;
+		    em {
+			    display: inline-block;
+			    float: right;
+			    text-align: center;
+			    width: 44px;
+			    height: 24px;
+			    padding: 10px 0;
+			    color: #888;
+			    font-size: 24px;
+			}
+		}
+	}
+	.add-wish-btn span i {
+	    width: 144px;
+	    display: block;
+	    text-align: center;
+	    float: left;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	}
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+}
+.select_size .stock span {
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+.return-attention {
+    margin-top: 20px;
+    padding-left: 5px;
+	img {
+	    float: left;
+	    margin-top: 2px;
+	}
+	p {
+	    float: left;
+	    margin-left: 10px;
+	    color: #888;
+	}
+}
+.detail-accordion-box {
+    margin-top: 25px;
+	dt {
+	    width: 100%;
+	    border-bottom: 1px solid #e5e5e5;
+	    padding: 10px 0;
+	    position: relative;
+	    box-sizing: border-box;
+		span.fa-angle-down {
+		    background-position: -4px -59px;
+		}
+		.acc-angle {
+		    font-size: 20px;
+		    position: absolute;
+		    top: 9px;
+		    right: 10px;
+		    color: #999;
+		}
+		p {
+		    font-size: 14px;
+		    color: #000;
+		    line-height: 20px;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    white-space: nowrap;
+		    font-weight: 500;
+		}
+	}
+	dd {
+	    padding: 10px 0;
+	    display: none;
+	    position: relative;
+	    text-align: left;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    line-height: 22px;
+	    font-size: 14px;
+	    color: #888;
+	}
+}
+.js-accordion dd{
+	color: #888;
+}
+.detail_title{
+	height: 50px;
+	line-height:50px;
+	width: 1200px;
+	margin:0 auto;
+	border-bottom:1px solid #ccc;
+	border-top:1px solid #ccc;
+	margin-top:10px;
+}
+.pinglunPic{
+	width: 1200px;
+	margin:0 auto;
+	img{
+		width: 1200px;
+	}
+} 
+.big{
+	width: 566px;
+	height: 755px;
+	position: absolute;
+	left: 670px;
+	top: 0px;
+	border:1px solid #888;
+	display: none;
+	overflow: hidden;
+	img{
+		position: absolute;
+	}
+}
+.PageAll{
+    width: 85%;
+    padding-left: 29px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    margin-left: 180px;
+
+.item_info{
+	width:240px;
+	height: 432px;
+	float: left;
+	color: #000;
+}
+
+    #list-a{
+    	width: 240px;
+    	height: 432px;
+    	.item-img{
+    		display: block;
+    		width: 240px;
+    		height: 432px;
+			.lazyload{
+				width: 240px;
+				height: 320px;
+			}
+    	}
+		.item_info{
+			width: 240px;
+			height: 112px;
+			h3{
+				font-size: 16px;
+				height: 30px;
+				width: 240px;
+				text-align: center;
+			}
+			.item_name{
+				font-size:14px;
+				height: 30px;
+				width: 240px;
+				text-align: center;
+				font-weight: 700px;
+			}
+			.item_price{
+				width: 240px;
+				line-height: 30px;
+				font-weight: 700px;
+			}
+			.sale_price{
+				height: 30px;
+				margin-left:60px;
+			}
+			.red_price{
+				height: 30px;
+    			float: right;
+    			margin-top:-5px;
+    			margin-right: 50px;
+				color: #f00;
+			}
+		}
+    }
+}
