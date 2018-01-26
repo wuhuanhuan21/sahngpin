@@ -5,7 +5,7 @@ require(["../src/config.js"],function(){ //先去配置;
 		
 		// 悬浮框
 		$(function(){
-			$(".list-item-01").eq(0).navtop();
+			$(".slidehaha").eq(0).navtop();
 		})
 	})	
 })
