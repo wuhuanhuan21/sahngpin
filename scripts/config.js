@@ -1,8 +1,10 @@
 /*配置文件*/
-requirejs.config({
+require.config({
 	paths:{
 		"jquery":"../src/jquery",
-		"cookie":"../src/jquery.cookie"
-		"require":"../src/require"
+		"cookie":"../src/jquery.cookie",
+		"putBig":"../src/putBig",
+		"pageall":"../src/classPage",
+		"navtop":"../src/jquery.nav"
 	}
 })

@@ -15,7 +15,6 @@
 			})
 			.then(function(res) {
 				res=JSON.parse(res)
-				console.log(res)
 				_this.create(res)
 
 			})

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<title>登录注册</title>
@@ -26,7 +26,7 @@
                                 <li class="current">
                                 	<a class="login_title" href="javascript:;">扫码登录</a>
                                 </li>
-                                <li class="">
+                                <li class="tab_change">
                                 	<a class="login_title" href="javascript:;">账户登录</a>
                                 </li>
                             </ul>
@@ -71,7 +71,7 @@
                                             <div class="inputparent_rlat" style="position: relative;">
                                                 <input type="text" class="txt_input code_input" id="spSignin_code" maxlength="4" name="VerifyCode" style="border: 1px solid rgb(177, 173, 170);" placeholder="请输入图形验证码"> 
                                                 <i class="code_box">
-                                                	<img id="spSignin_captchCode" onclick="changeCaptchCode();" src="/login/VerifyImage?viid=10ba3658-9be2-4028-9b8c-cc36e417582a&amp;v=0.2536856435869137">
+                                                	<img id="spSignin_captchCode" onclick="changeCaptchCode();">
                                                 	<a href="javascript:;" onclick="changeCaptchCode()">换一换</a>
                                                 </i> 
                                                 <span></span>
@@ -103,7 +103,7 @@
                                                 <label for="VerifyCode" style="position: absolute; top: 0px; left: 20px; cursor: text; color: rgb(153, 153, 153); line-height: 45px;">请输入图形验证码</label>
                                                 <input type="text" class="txt_input code_input" phdata="请输入图形验证码" id="spDynamic_code" name="VerifyCode" value="" maxlength="4" style="border: 1px solid rgb(177, 173, 170);"> 
                                                 <i class="code_box">
-                                                	<img alt="验证码" id="spSignin_dynamicCaptchCode" onclick="changeDynamicCaptchCode();" src="/login/VerifyImage?viid=9d5428d3-b689-462e-a7ae-4f82f17d83d3&amp;v=0.6111948421941034">
+                                                	<img alt="验证码" id="spSignin_dynamicCaptchCode" onclick="changeDynamicCaptchCode();">
                                                 	<a href="javascript:;" onclick="changeDynamicCaptchCode()">换一换</a>
                                                 </i> 
                                                 <span></span>
